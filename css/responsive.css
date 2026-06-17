@@ -1,0 +1,40 @@
+/* 모든 페이지 공통 반응형 영역(header / footer) */
+
+
+@media screen and (max-width:1440px) {
+    .gnb_wrap { gap: clamp(10px, 1.25vw + 6px, 30px); }
+    .gnb ul li a{
+    padding: 0 clamp(20px, 1.04vw + 15px, 30px); 
+    /* (30-20) / (1440 - 480) */
+    /* 0.01041 * 100 = 1.04vw */
+    /* 0.01041 * 480 =5 */
+    /* 20-5 = 15px */ }
+}
+
+@media screen and (max-width:1280px) {
+    .gnb { display: none; }
+    .btn_m_menu { display: inline-block; color: #fff; }
+    header{height: clamp(56px, 4.58vw + 12px, 100px);}
+   .logo{height: clamp(56px, 4.58vw + 12px, 100px);}
+   .logo a img {height: clamp(14px, 0.625vw + 11px, 20px);}
+    /* (20-14) / (1440 - 480) */
+    /* 0.00625 * 100 = 0.625vw */
+    /* 0.00625 * 480 =3 */
+    /* 14-3 = 11px */
+}
+
+@media screen and (max-width:1024px) {
+   
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:600px) {
+    .hero_article br{display: block;}
+}
+
+@media screen and (max-width:480px) {
+    
+}

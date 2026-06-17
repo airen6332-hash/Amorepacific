@@ -1,0 +1,141 @@
+@media screen and (max-width:1440px) {
+.rni_video_controller{bottom: 338px;}
+
+/* .circulararchive_contents_wrap{ width: 75%;}
+ */
+}
+
+@media screen and (max-width:1280px) {
+.rni_video_controller{bottom: 328px;}
+section.globalcommunity .globalcommunity_contents_wrap.owl-carousel {display: block;}
+.globalcommunity .globalcommunity_contents_wrap .globalcommunity_contents_box {width: 100%;min-width: 0;}
+.globalcommunity .globalcommunity_contents_product img { width: clamp(47px, 0.833vw + 43px, 55px);height: auto; flex-shrink: 0; }
+
+
+
+
+}
+
+@media screen and (max-width:1024px) {
+.rni_video_controller{bottom: 250px;}
+.rni_contents_card{height: 180px;}
+.rni_contents_card span{display: none;}
+.news_contents_title .contents_article_xlarge br{display: block; } 
+
+/* history */
+.history .contents_article_xlarge br{display: none;}
+.history_contents_box{flex-direction: column; align-items: center; gap: 14px;}
+
+.history_contents_wrap .contents_article_xxlarge span {display: none; }
+.history_contents {width: 100%; aspect-ratio: auto; height: 340px; }
+
+.beauty_bestseller{flex-direction: column; gap: 30px; }
+.beauty_bestseller_tabs{flex-direction: row;}
+#skincare, #cosmatic, #holisticcare, #device, #teaculture { width: 100%; }
+
+.bestseller_tabs { width: 100%; }
+.beauty_bestseller_tabs{
+    width: 100%; flex-direction: row; flex-wrap: nowrap; 
+    white-space: nowrap; overflow-x: scroll; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.beauty_bestseller_tabs::-webkit-scrollbar { display: none; }
+.beauty_bestseller_tabs a.active::after { content: none; }
+.beauty_bestseller_tabs a.active { padding: 0 10px 8px 10px ;
+   border-bottom: 2px solid #3271D2;
+}
+
+.integratedservies_contents img{width: 46px; height: 46px;}
+.integratedservies_text_wrap .contents_title_xsmall br{display: block;}
+.integratedservies_text_wrap .contents_article_small br{display: none;}
+.integratedservies_contents_box .contents_title_small br{display: block; } 
+
+}
+
+
+
+
+/* 테블릿 */
+@media screen and (max-width:768px) {
+.brand .contents_title_wrap .contents_article_xlarge br{display: none; }
+
+/* rni */
+.rni_contents_wrap{flex-direction: column; gap: 20px;}
+.rni_contents_wrap .rni_contents_card_wrap{width: 100%;  gap: 8px;}
+.rni_video_controller{bottom: 280px;}
+.rni_contents_card{height: 120px;}
+
+
+.history_contents { height: 280px; }
+.history_contents_wrap .contents_article_xxlarge {width: 340px;}
+
+.globalcommunity_product_box .contents_title_xxsmall span{ display: inline-block; max-width: 36px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.circulararchive_contents_wrap{ width: 78%;}
+
+.integratedservies_contents_box{width: 100%; padding: clamp(16px, calc(3.33vw - 0px), 48px) clamp(20px, calc(6.25vw - 10px), 80px); border-right: none; border-top: 1px solid #c0c0c0; flex-direction: row; align-items: center; justify-content: flex-start;}
+
+.integratedservies_contents{padding: 0 40px;}
+.integratedservies_contents img{width: 40px; height: 40px;}
+.integratedservies_contents_box:first-child{border-top: none;}
+.integratedservies_text_wrap{text-align: left;}
+.integratedservies_text_wrap .contents_title_xsmall br{display: none;}
+.integratedservies_contents .contents_title_medium{width: 110px;}
+
+.integratedservies_contents{padding: 0 30px;}
+
+
+footer{padding: 120px 0 60px 0;}
+
+.footer_logo{padding-left: 20px;}
+.footer_logo img{width: 186px;}
+.footer_gnb_wrap{flex-direction: column; align-items: center; gap:60px; padding-bottom: 60px;}
+.footer_gnb{width: 100%;  flex-direction: column;}
+.footer_gnb ul{gap: 0;}
+.footer_gnb ul li{padding: 14px 20px; border-top: 1px solid #d9d9d9;}
+.footer_gnb ul:nth-child(2) li:last-child{border-bottom: 1px solid #d9d9d9;}
+.footer_sns ul{width: 180px; }
+.footer_sns img{height: 22px;}
+.footer_text_wrap{flex-direction: column-reverse; gap: 10px; padding-top: 60px;}
+
+
+}
+
+
+
+@media screen and (max-width:600px) {
+.rni_video_controller{bottom: 260px;}
+.rni_contents_card{height: 100px;}
+.news_contents_title .contents_article_xlarge span{display: inline-block; max-width: 36px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.history .contents_article_xlarge{padding-left: 50px;}
+.history_contents { height: 240px; }
+.history_contents_wrap .contents_article_xxlarge {width: 280px;}
+
+
+
+.circulararchive_contents_wrap{ width: 82%;}
+.circulararchive .contents_article_xlarge{padding-left: 50px;}
+.circulararchive .contents_article_xlarge br{display: none;}
+
+.integratedservies_contents{padding: 0 18px;}
+.integratedservies_contents img{width: 36px; height: 36px;}
+
+
+.integratedservies_text_wrap .contents_article_small{letter-spacing: -1px;}
+.integratedservies_text_wrap .contents_title_xsmall, .integratedservies_text_wrap .contents_article_small{font-size: 14px;}
+
+
+
+}
+
+@media screen and (max-width:480px) {
+
+
+.circulararchive_contents_wrap{ width: 85%;}
+
+.integratedservies_text_wrap .contents_article_small br{display: block;}
+.integratedservies_contents{width: 95px; padding: 0 8px;}
+
+.integratedservies_text_wrap .contents_title_xsmall, .integratedservies_text_wrap .contents_article_small{font-size: 12px;}
+
+}
