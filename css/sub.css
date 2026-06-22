@@ -30,8 +30,8 @@ display: flex; flex-wrap: wrap; flex-direction: column;gap: 8px; color: #fff; z-
 
 
 /* artisansofbeauty */
-.artisansofbeauty{padding-top: clamp(80px, calc(10.41vw + 30px), 180px); margin: 0; display: flex; flex-wrap: wrap; flex-direction: column; align-items: flex-end; gap: clamp(80px, calc(8.33vw + 40px), 160px);  background: #000;}
-.artisansofbeauty .contents_title_wrap{width: 100%;}
+.artisansofbeauty{padding: clamp(80px, calc(10.41vw + 30px), 180px) 0; margin: 0; display: flex; flex-wrap: wrap; flex-direction: column; align-items: flex-end; gap: clamp(80px, calc(8.33vw + 40px), 160px);  background: #000;}
+.artisansofbeauty .contents_title_wrap{width: 100%; padding: 0 (20px, calc(6.25vw - 10px), 80px); box-sizing: border-box;}
 .artisansofbeauty .contents_title_xxlarge{width: 100% ; border-bottom: 1px solid #666; box-sizing: border-box; padding-bottom: 20px; color:#fff;}
 .artisansofbeauty_contents_wrap{position: relative; width: 80%; padding-bottom: 180px; overflow: hidden; }
 .artisansofbeauty_contents_box{ cursor: pointer;}
@@ -58,42 +58,66 @@ display: flex; flex-wrap: wrap; flex-direction: column;gap: 8px; color: #fff; z-
 /* craftingthevision_01 */
 .craftingthevision_01{padding: clamp(80px, calc(10.41vw + 30px), 180px) 0 0 0; display: flex; flex-wrap: wrap; flex-direction: column; gap: 40px;}
 .craftingthevision_01 .contents_title_xxlarge{padding-left: clamp(20px, calc(6.25vw - 10px), 80px);}
-.craftingthevision_01_contents_wrap{position: relative; width: 100%; display: flex; flex-wrap: wrap; gap: clamp(30px, 5vw, 96px); }
+.craftingthevision_01_contents_wrap{position: relative; z-index: 99; width: 100%; display: flex; flex-wrap: wrap; gap: clamp(30px, 5vw, 96px); }
 .craftingthevision_01_contents_text_wrap{width: 40%; flex-shrink: 1; display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; gap: 23px; padding-right:  clamp(20px, calc(2.08vw + 10px), 40px);}
 .craftingthevision_01_contents_text_box{display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center; gap: 23px; }
 .craftingthevision_01_contents_text_box .contents_article_large{line-height: 144%; color: #676767;}
-.craftingthevision_01_contents_box{width: 50%; max-width: 960px;   flex-shrink: 1;position: relative; overflow: hidden; cursor: pointer; border-bottom-right-radius: 30%; }
+.craftingthevision_01_contents_box{width: 50%; max-width: 960px; height: 928px; flex-shrink: 1; position: relative; overflow: hidden; cursor: pointer; border-bottom-right-radius: 30%; background: #000; }
 .craftingthevision_01_contents_box .contents_title_large {position: absolute; bottom: 0; left: 0; padding: 40px; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.3);  z-index: 2; }
-.craftingthevision_01_contents_overlay{position: absolute; top: 0; left: 0;width: 100%; height: 100%;background: rgba(0, 0, 0, 0.4); z-index: 1; opacity: 0.3; transition: .4s ease-in-out;}
-.craftingthevision_01_contents_box:hover .craftingthevision_01_contents_overlay{opacity: 1;}
-.craftingthevision_01_contents_box .craftingthevision_01_contents_img {transition: .4s; display: block; width: 100%; height: auto;}
-.craftingthevision_01_contents_box:hover .craftingthevision_01_contents_img{transform: scale(1.02); transition: .4s;}
+.craftingthevision_01_contents_overlay{
+    width: 100%; height: 100%; opacity: 0.7;
+    position: absolute; top: 0; left: 0; z-index: 1; transition: .4s ease-in-out;
+    background: url(../images/craftingthevision_01_contents_img_01.jpg) no-repeat 50% 50% / cover;
+}
+/* .craftingthevision_01_contents_box:hover .craftingthevision_01_contents_overlay{opacity: 1;} */
+/* .craftingthevision_01_contents_box .craftingthevision_01_contents_img {transition: .4s; display: block; width: 100%; height: auto;} */
+.craftingthevision_01_contents_box:hover .craftingthevision_01_contents_overlay{transform: scale(1.02); opacity: 0.3; }
 
 /* craftingthevision_02 */
 .craftingthevision_02{position: relative; width: 100%;  display: flex; flex-wrap: wrap; justify-content: flex-end; padding: 0; padding-bottom: 100px; margin-top: -117px;}
-.bg{position: absolute; top: 0; left: 10%; right: 0; width: 90%; aspect-ratio: 1/0.4;  padding: 0 150px 0 80px; border-bottom-left-radius: 180px; background: #EFEFEF; z-index: -1;}
-.craftingthevision_02_contents_text_wrap{width: 90%; margin-left: 10%; aspect-ratio: 1/0.4; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0 150px 0 80px;}
-.craftingthevision_02_contents_text_wrap .contents_article_xlarge { color: #5d5d5d; line-height: 144%; }
+/* .bg{position: absolute; top: 0; left: 10%; right: 0; width: 90%; aspect-ratio: 1/0.4;  padding: 0 150px 0 80px; border-bottom-left-radius: 180px; background: #EFEFEF; z-index: -1;} */
+.craftingthevision_02_contents_text_wrap{
+    width: 90%; margin-left: 10%; aspect-ratio: 1/0.4; 
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 200px; 
+    padding: 0 150px 0 80px; border-bottom-left-radius: 180px; background: #EFEFEF; 
+}
+.craftingthevision_02_contents_text_wrap .contents_article_xlarge { flex: 1; color: #5d5d5d; line-height: 144%; }
 
-.craftingthevision_02_contents_wrap{display: flex; flex-wrap: wrap; gap: 20px; margin-top: -160px;}
+.craftingthevision_02_contents_wrap{
+    width: 59%; display: flex; flex-wrap: wrap; gap: 20px; margin-top: clamp(-160px, calc(-12.5vw + 80px), -80px);
+}
 
-.craftingthevision_02_contents_box{position: relative; overflow: hidden; cursor: pointer; }
+.craftingthevision_02_contents_box{ width: calc((100% - 40px) / 3); height: 414px; position: relative; overflow: hidden; cursor: pointer; background: #000;}
 .craftingthevision_02_contents_box:first-child{border-top-left-radius: 30%; }
 .craftingthevision_02_contents_box .contents_title_large {position: absolute; bottom: 0; left: 0; padding: 40px; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.3);  z-index: 2; }
-.craftingthevision_02_contents_overlay{position: absolute; top: 0; left: 0;width: 100%; height: 100%;background: rgba(0, 0, 0, 0.4); z-index: 1; opacity: 0.3; transition: .4s ease-in-out;}
+.craftingthevision_02_contents_overlay{
+    width: 100%; height: 100%; opacity: 0.7;
+    position: absolute; top: 0; left: 0; z-index: 1; transition: .4s ease-in-out;
+}
+.craftingthevision_02_contents_box:first-child .craftingthevision_02_contents_overlay { background: url(../images/craftingthevision_02_contents_img_01.jpg) no-repeat 50% 50% / cover; }
+.craftingthevision_02_contents_box:nth-child(2) .craftingthevision_02_contents_overlay { background: url(../images/craftingthevision_02_contents_img_02.jpg) no-repeat 50% 50% / cover; }
+.craftingthevision_02_contents_box:last-child .craftingthevision_02_contents_overlay { background: url(../images/craftingthevision_02_contents_img_03.jpg) no-repeat 50% 50% / cover; }
+
 .craftingthevision_02_contents_box:hover .craftingthevision_02_contents_overlay{opacity: 1;}
 .craftingthevision_02_contents_box .craftingthevision_02_contents_img {transition: .4s; display: block;}
-.craftingthevision_02_contents_box:hover .craftingthevision_02_contents_img{transform: scale(1.02); transition: .4s;}
+.craftingthevision_02_contents_box:hover .craftingthevision_02_contents_overlay{transform: scale(1.02); opacity: 0.3; }
 
 /* craftingthevision_03 */
-.craftingthevision_03_contents_wrap{display: flex; flex-wrap: wrap; gap: 20px;}
-.craftingthevision_03_contents_box{position: relative; overflow: hidden; cursor: pointer; }
+.craftingthevision_03 {padding-left: 0;}
+.craftingthevision_03_contents_wrap{width: 78%; display: flex; flex-wrap: wrap; gap: 20px;}
+.craftingthevision_03_contents_box{width: calc((100% - 40px) / 3); height: 552px; position: relative; overflow: hidden; cursor: pointer; background: #000; }
 .craftingthevision_03_contents_box:last-child{border-top-right-radius: 150px; border-bottom-right-radius: 150px; }
 .craftingthevision_03_contents_box .contents_title_large {position: absolute; bottom: 0; left: 0; padding: 40px; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.3);  z-index: 2; }
 .craftingthevision_03_contents_overlay{position: absolute; top: 0; left: 0;width: 100%; height: 100%;background: rgba(0, 0, 0, 0.4); z-index: 1; opacity: 0.3; transition: .4s ease-in-out;}
-.craftingthevision_03_contents_box:hover .craftingthevision_03_contents_overlay{opacity: 1;}
-.craftingthevision_03_contents_box .craftingthevision_03_contents_img {transition: .4s; display: block;}
-.craftingthevision_03_contents_box:hover .craftingthevision_03_contents_img{transform: scale(1.02); transition: .4s;}
+.craftingthevision_03_contents_overlay{
+    width: 100%; height: 100%; opacity: 0.7;
+    position: absolute; top: 0; left: 0; z-index: 1; transition: .4s ease-in-out;
+}
+.craftingthevision_03_contents_box:first-child .craftingthevision_03_contents_overlay { background: url(../images/craftingthevision_03_contents_img_01.jpg) no-repeat 50% 50% / cover; }
+.craftingthevision_03_contents_box:nth-child(2) .craftingthevision_03_contents_overlay { background: url(../images/craftingthevision_03_contents_img_02.jpg) no-repeat 50% 50% / cover; }
+.craftingthevision_03_contents_box:last-child .craftingthevision_03_contents_overlay { background: url(../images/craftingthevision_03_contents_img_03.jpg) no-repeat 50% 50% / cover; }
+
+.craftingthevision_03_contents_box:hover .craftingthevision_03_contents_overlay{transform: scale(1.02); opacity: 0.3; }
 .craftingthevision_03_bg{ width: 90%; aspect-ratio: 1 / 0.3; background: #EFEFEF; border-top-right-radius: 300px; border-bottom-right-radius: 300px; z-index: -1; margin-top: -310px; }
 
 /* thecultureofsharedbeauty_01 */
