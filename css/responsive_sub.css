@@ -1,0 +1,63 @@
+@media screen and (max-width:1440px) {
+    .artisansofbeauty_contents_title_wrap .contents_title_small br{display: none;}
+    .artisansofbeauty_contents_wrap .swiper-pagination{bottom:60px; }
+
+
+
+}
+
+@media screen and (max-width:1280px) {
+    .artisansofbeauty_contents{height: clamp(380px, calc(14.88vw + 266px), 480px);}
+    .artisansofbeauty_contents_wrap .swiper-pagination{bottom:70px; }
+
+    .craftingthevision_02{flex-direction: column-reverse;}
+    .craftingthevision_02_contents_wrap{width: 80%;}
+    .craftingthevision_02_contents_box .craftingthevision_02_contents_img {width: 100%; height: auto; }
+    .craftingthevision_01_contents_box{width: 80%; flex-shrink: 1;}
+    
+    
+
+}
+
+@media screen and (max-width:1024px) {
+    .artisansofbeauty_contents_wrap .swiper-pagination{bottom:100px; }
+
+    .craftingthevision_01_contents_wrap{flex-direction: column; width: 100%; }
+    .craftingthevision_01_contents_text_wrap{ width: 75%; padding-left: 25%;}
+    
+    .craftingthevision_01_contents_text_box .contents_article_large:last-child{display: none;}
+    .craftingthevision_01_contents_box{width: 70%;}
+}
+
+@media screen and (max-width:768px) {
+    .growthvision_contents_wrap{flex-direction: column;  align-items: center;  width: 100%; padding-top: 40px;}
+    .growthvision_contents_box { width: 100%; height: 250px; aspect-ratio: auto; border-bottom: 1px solid #666; border-right: none; padding: clamp(20px, calc(2.08vw + 10px), 40px) 0;}
+    .growthvision_contents_img_wrap{ width: 100%; height: 100%; aspect-ratio: auto; overflow: hidden; transition: height 0.4s ease;}
+    .growthvision_contents_box:last-child{border-bottom: none;}
+    .growthvision_contents_box:nth-child(2) .growthvision_contents_img_wrap {margin-top: 0;}
+    .growthvision_contents_img{width: 100%;}
+    .growthvision_contents_hidden_text{gap: 6px;}
+    .growthvision_contents_wrap .growthvision_contents_box:hover {height: 560px; animation: fadeInUp 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
+   .growthvision_contents_box:hover .growthvision_contents_hidden_text {
+    opacity: 1; transform: translateY(0); }
+
+    artisansofbeauty_contents_wrap .swiper-wrapper{ display: flex; flex-wrap: wrap; flex-direction: column;}
+    .artisansofbeauty_contents_box{width: 100%; border-bottom: 1px solid #666; border-top: 1px solid #666;}
+    .artisansofbeauty_contents{width: 100%; flex-direction: row-reverse;}
+    .artisansofbeauty_contents_wrap .swiper-pagination{display: none};
+    .btn_more_text{display: block;}
+    .btn_more_text a{ border-bottom: 2px solid #999; color: #999;}
+
+    .craftingthevision_01_contents_box{width: 80%;}
+
+    .craftingthevision_02{display: flex; flex-wrap: wrap; justify-content: flex-end; padding: 0; margin-top: -117px;}
+        
+    .craftingthevision_02_contents_text_wrap{width: 90%; margin-left: 10%; aspect-ratio: 1/0.4; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0 150px 0 80px; border-bottom-left-radius: 180px; background: #EFEFEF; }
+    .craftingthevision_02_contents_wrap{gap: clamp(8px, calc(4.16vw - 12px), 20px); margin-top: -160px;}
+    
+
+}
+
+@media screen and (max-width:600px) {}
+
+@media screen and (max-width:480px) {}
